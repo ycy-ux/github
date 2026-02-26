@@ -11,7 +11,7 @@ namespace GitHubSyncTest
         {
             // 基础测试变量（你可以在B电脑修改这些值）
             string userName = "测试用户";
-            int num1 = 100;
+            int num1 = 99;
             double num2 = 25.5;
             bool isTestSuccess = true;
 
