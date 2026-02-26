@@ -1,0 +1,45 @@
+// Program.cs (C# 控制台程序，测试 GitHub 同步用)
+// 注意：C# 文件名建议和类名一致，这里保存为 Program.cs 即可
+using System;
+
+namespace GitHubSyncTest
+{
+    // 主程序类
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // 基础测试变量（你可以在B电脑修改这些值）
+            string userName = "测试用户";
+            int num1 = 100;
+            double num2 = 25.5;
+            bool isTestSuccess = true;
+
+            // 输出欢迎信息
+            Console.WriteLine("===== GitHub 跨电脑同步测试（C#） =====");
+            Console.WriteLine($"你好，{userName}！当前时间：{DateTime.Now}");
+            Console.WriteLine();
+
+            // 简单计算演示
+            Console.WriteLine("【基础计算】");
+            Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
+            Console.WriteLine($"{num1} × {num2} = {num1 * num2}");
+            Console.WriteLine();
+
+            // 条件判断演示
+            Console.WriteLine("【条件判断】");
+            if (isTestSuccess)
+            {
+                Console.WriteLine("✅ 同步测试状态：成功！");
+            }
+            else
+            {
+                Console.WriteLine("❌ 同步测试状态：失败！");
+            }
+
+            // 暂停窗口，方便查看结果
+            Console.WriteLine("\n按任意键退出...");
+            Console.ReadKey();
+        }
+    }
+}
